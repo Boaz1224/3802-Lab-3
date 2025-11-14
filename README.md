@@ -1,4 +1,4 @@
-%Use this to test my NACA Generator code (Change 4406 to any 4-digit number
+%Use this to test my NACA Generator code (Change 4406 to any 4-digit number)This works for NACAGen4 and NACAGen3
 
 [xb, yb] = naca4_boundary('4406', 201, 1.0, 'cosine');
 
