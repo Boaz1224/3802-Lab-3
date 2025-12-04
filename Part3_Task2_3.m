@@ -40,7 +40,8 @@ end
 cd_AoA = polyval(poly, cl_AoA_0012);
 
 %Plot
-figure(3);
+figure(2);
+hold on;
 plot(AoA,cd_AoA,LineWidth=2,Color="red")
 hold off;
 title("Angle of Attack vs Profile Drag Coefficient")
@@ -93,7 +94,8 @@ end
 cd_tot = cdi_AoA + cd_AoA;
 
 %Plot
-figure(4);
+figure(3);
+hold on;
 plot(AoA,cdi_AoA,LineWidth=2,Color="red")
 hold off;
 title("Angle of Attack vs Induced Drag Coefficient")
@@ -104,7 +106,8 @@ grid on;
 ax = gca; % axes handle
 ax.YAxis.Exponent = 0;
 
-figure(5);
+figure(4);
+hold on;
 plot(AoA,cd_tot,LineWidth=2,Color="red")
 hold off;
 title("Angle of Attack vs Total Drag Coefficient")
